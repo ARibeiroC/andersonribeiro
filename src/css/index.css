@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: azure;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-image: url("../image/joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg");
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-position: center;
+  background-blend-mode: darken;
+  color: azure;
+}
+body #content {
+  max-width: 75rem;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+body #content header {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  height: 12vh;
+}
+body #content header #belt {
+  background: #020202;
+}
+body #content header #belt #contacts {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+body #content header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0;
+}
+body #content header nav .title-menu {
+  font-size: 1.5rem;
+}
+body #content header nav #menu {
+  display: flex;
+  gap: 1rem;
+}
+body #content header nav #menu a {
+  color: azure;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  transition: 0.3s;
+}
+body #content header nav #menu a:hover {
+  color: magenta;
+  transform: translateY(-2px);
+}
+body #home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  min-height: 88vh;
+}
+body #home #description-profile {
+  display: flex;
+  min-height: 80vh;
+  gap: 1rem;
+}
+body #home #description-profile #title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  height: 50%;
+}
+body #home #description-profile #title .text-description h2 {
+  margin-block: 2rem;
+  color: magenta;
+}
+body #home #description-profile #title .text-description p {
+  font-size: 1.8rem;
+  color: azure;
+}
+body #home #description-profile #title .text-description #description {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: azure;
+  margin-block: 1rem;
+}
+body #home #description-profile #title .stacks {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  justify-content: end;
+}
+body #home #description-profile #title .stacks .items-stacks {
+  display: flex;
+}
+body #home #description-profile #title .stacks .items-stacks li {
+  flex: 1;
+  text-align: center;
+}
+body #home #description-profile #title .stacks .items-stacks li i {
+  font-size: 3.5rem;
+}
+body #home #description-profile #img-home {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 50%;
+  padding-block: 2rem;
+}
+body #home #description-profile #img-home img {
+  border-radius: 1rem;
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: cover;
+}
+body #home #button-next {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  border-radius: 2rem;
+  border: 1px solid azure;
+  color: #020202;
+  cursor: pointer;
+  padding: 0.2rem;
+  height: 3rem;
+  width: 2rem;
+}
+body #home #button-next .fa-solid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 1px;
+  background: azure;
+  height: 1.4rem;
+  width: 1.4rem;
+  border-radius: 50%;
+  transition: 0.4s;
+  animation-name: topdown;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+@keyframes topdown {
+  0% {
+    top: 1px;
+  }
+  100% {
+    top: 14px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

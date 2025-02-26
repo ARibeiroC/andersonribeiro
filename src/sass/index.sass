@@ -1,0 +1,188 @@
+@use '_mixins' as *
+@use '_variables' as *
+
+
+* 
+    @include default
+
+a 
+    text-decoration: none
+    color: $color-azure
+
+ul 
+    list-style: none
+
+body
+    background-image: url('../image/joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg')
+    background-size: cover
+    background-color: rgba(0,0,0, .8)
+    background-position: center
+    background-blend-mode: darken
+    color: $color-azure
+
+    #content
+        max-width: 75rem
+        margin: 0 auto
+        min-height: 100vh
+
+        header
+            display: flex
+            flex-direction: column
+            font-size: 1rem
+            height: 12vh
+
+            #belt
+                background: $color-default
+                #contacts
+                    display: flex
+                    justify-content: end
+                    gap: 1rem
+
+                    padding: 1rem
+                    cursor: pointer
+
+            nav
+                display: flex
+                justify-content: space-between
+                align-items: center
+                padding: .4rem 0
+
+                .title-menu
+                    font-size: 1.5rem
+
+                #menu
+                    display: flex
+                    gap: 1rem
+
+                    a
+                        color: $color-azure
+                        font-size: 1.2rem
+                        font-weight: 500
+                        padding: .5rem 1rem
+                        border-radius: 1rem
+                        transition: .3s
+
+                        &:hover
+                            color: $color-magenta
+                            transform: translateY(-2px)
+
+    #home
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        position: relative
+
+        min-height: 88vh
+
+        #description-profile
+            display: flex
+            min-height: 80vh
+            gap: 1rem
+
+            #title
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                
+                font-size: 2rem
+
+                margin-bottom: 3rem
+
+                height: 50%
+
+                .text-description
+                    h2
+                        margin-block: 2rem
+                        color: $color-magenta
+
+                    p
+                        font-size: 1.8rem
+                        color: $color-azure
+
+                    #description
+                        font-size: 1.2rem
+                        font-weight: 500
+                        color: $color-azure
+
+                        margin-block: 1rem
+
+                .stacks
+                    display: flex
+                    flex-direction: column
+                    font-size: 1.5rem
+                    justify-content: end
+
+                    .items-stacks
+                        display: flex
+                        
+                        li
+                            flex: 1
+                            text-align: center
+
+                            i
+                                font-size: 3.5rem
+
+
+            #img-home
+                display: flex
+                justify-content: center
+                // align-items: center
+
+                overflow: hidden
+                width: 50%
+                padding-block: 2rem
+
+                img
+                    border-radius: 1rem
+                    max-width: 80%
+                    max-height: 80%
+                    object-fit: cover
+
+        #button-next
+            display: flex
+            justify-content: center
+
+            position: absolute
+
+            bottom: 10%
+            left: 50%
+
+            border-radius: 2rem
+            border: 1px solid $color-azure
+
+            color: $color-default
+            cursor: pointer
+            
+            padding: .2rem
+
+            height: 3rem
+            width: 2rem
+            
+            .fa-solid
+                display: flex
+                justify-content: center
+                align-items: center
+                
+                position: relative
+
+                top:1px
+
+                background: $color-azure
+                height: 1.4rem
+                width: 1.4rem
+                border-radius: 50%
+                transition: .4s
+                animation-name: topdown
+                animation-duration: 1s
+                animation-direction: alternate
+                animation-iteration-count: infinite
+                animation-timing-function: ease-in
+
+            @keyframes topdown
+                0%
+                    top:1px
+                    
+                100%
+                    top: 14px
+                    
+                    

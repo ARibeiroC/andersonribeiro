@@ -1,0 +1,6 @@
+/* CONTEÚDO DA PÁGINA */
+#content main {
+    min-height: 88vh;
+    background-size: cover;
+    background-blend-mode: darken;
+}
