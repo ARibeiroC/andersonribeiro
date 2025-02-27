@@ -18,26 +18,6 @@
         <!-- CABEÇALHO DA PÁGINA -->
         <header>
             <!-- INFORMAÇÕES DE CONTATOS -->
-            <div id="belt">
-
-                <div id="contacts">
-
-                    <div class="whatsapp">
-                        <i class="fa-brands fa-whatsapp"></i>
-                        (11) 9999-9999
-                    </div>
-
-                    <div class="linkedin">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </div>
-
-                    <div class="github">
-                        <i class="fa-brands fa-github"></i>
-                    </div>
-
-                </div>
-
-            </div>
 
             <!-- NAVEGAÇÃO DE MENUS -->
             <nav>
@@ -46,8 +26,8 @@
                 </div>
                 <div id="menu">
                     <a href="#">Página Inicial</a>
-                    <a href="#">Sobre mim</a>
-                    <a href="#">Portfólio</a>
+                    <a href="#about">Sobre mim</a>
+                    <a href="#portfolio">Portfólio</a>
                     <a href="#">Contatos</a>
                 </div>
             </nav>
@@ -55,61 +35,113 @@
         <main>
             <section id="home">
                 <div id="description-profile">
+                    <h2>Desenvolvedor FullStack</h2>
+                    <h3>Trazendo soluções e prospectando futuro!</h3>
                     <div id="title">
                         <div class="text-description">
-                            <h2>Desenvolvedor FullStack</h2>
-                            <p id="subtitle">Trazendo soluções e prospectando futuro!</p>
-                            <p id="description">Apaixonado por desenvolver soluções utilizando as principais stacks do mercado, focado em Front-End</p>
+                            <p class="description">Recem formado em Analise e Desenvolvimento de Sistemas (2024) e educando da Pós Graduação em Computação Forense e Perícia Digital, tenho focado meus esforços para área de segurança.</p>
+                            <p class="description">Meu objetivo é poder atuar no mercado como Analista de Segurança, voltado para área de Golpes e Fraudes (vamos enfraquecer o crime organizado)</p>
+                            <p class="description">Porém, adoro criar soluções em aplicações para solucionar uma dor, e atualmente tenho algusn <a href="#portfolio"><span>projetos</span></a> no qual estou envolvido</p>
+                            <h4>
+                                "O resultado da solução é reflexo do conhecimento do desenvolvedor."
+                            </h4>
                         </div>
+                    </div>
+
+                </div>
+                <div id="button-next">
+                    <a href="#about">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                </div>
+            </section>
+            <section id="about">
+                <h2>Sobre Mim</h2>
+                <div id="content-about">
+                    <div class="text-description">
+                        <p>Sou desenvolvedor FullStack desde 2022 quando iníciei minha graduação em Análise e Desenvolvimento de Sistemas, ná época já conhecia sobre linguagem de programa, conhecia um pouco de Delphi e PHP.</p>
+    
+                        <p>Atualmente estou envolvido com um projeto freelancer de desenvolver um ERP com um CMR e um E-commerce, para uma escola de Jiu-Jitsu e um projeto particular onde estou desenvolvendo também minha própria ERP, para genrenciar minhas atividades.</p>
+                            
+                        <p>Iniciei na programação a muitos anos atrás, na época de ActionScript (Flash), como hobby, queria desenvolver jogos, depois em 2016 tive que aprender PHP 5 para ministrar aulas de Desenvolvimento WEB, atualmente domino as tecnologias de HTML, CSS, SASS/SCSS e Javascript e React, mas também estou aprimorando outras tecnologias como: NodeJS, Python e PHP 8+.</p>
                         <div class="stacks">
                             <p>Principais Stacks:</p>
                             <ul class="items-stacks">
-                                <li>
+                                <li class="stacks-item" id="html">
                                     <i class="fa-brands fa-html5"></i>
                                     <p>HTML</p>
                                 </li>
-                                <li>
+                                <li id="css" class="stacks-item">
                                     <i class="fa-brands fa-css3-alt"></i>
                                     <p>CSS</p>
                                 </li>
-                                <li>
+                                <li id="sass" class="stacks-item">
                                     <i class="fa-brands fa-sass"></i>
                                     <p>SASS</p>
                                 </li>
-                                <li>
+                                <li id="javascript" class="stacks-item">
                                     <i class="fa-brands fa-js"></i>
                                     <p>JAVASCRIPT</p>
                                 </li>
-                                <li>
+                                <li id="react" class="stacks-item">
                                     <i class="fa-brands fa-react"></i>
                                     <p>REACT</p>
                                 </li>
-                                <li>
+                                <li id="git" class="stacks-item">
+                                    <i class="fa-brands fa-git-alt"></i>
+                                    <p>GIT</p>
+                                </li>
+                                <li id="nodejs" class="stacks-item">
                                     <i class="fa-brands fa-node-js"></i>
                                     <p>NODE JS</p>
+                                </li>
+                                <li id="python" class="stacks-item">
+                                    <i class="fa-brands fa-python"></i>
+                                    <p>PYTHON</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div id="img-home">
+                    <div id="img-about">
                         <img src="./src/image/IMG_20221210_113654071-2.jpg" alt="">
                     </div>
                 </div>
-                <div id="button-next">
-                    <i class="fa-solid fa-caret-down"></i>
-                </div>
-            </section>
-            <section id="about">
-
             </section>
             <section id="portfolio">
-                
+                <h2>Projetos</h2>
+                <h3>Todos os projetos estão disponiveis no repositórios do github, onde você pode conhecer mais sobre cada um ao clicar no botão acessar, você será redirecionado para o repositório do projeto, contendo suas principais informações, como: tecnlogia utilizada, objetivo, andamento do projeto e etc.</h3>
+                <div id="content-projects">
+                    <div class="project-card">
+
+                    </div>
+                </div>
             </section>
         </main>
         <footer id="contact">
-            <p>Developer by: Code Seven Academy &copy 2025</p>
-            Imagem de plano de fundo: <a href="https://unsplash.com/pt-br/@joshuaryanphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Joshua Reddekopp</a> na <a href="https://unsplash.com/pt-br/fotografias/macbook-pro-na-mesa-de-madeira-marrom-SyYmXSDnJ54?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-      
+            <p>&copy 2025, Developer by: <span>Code Seven Academy</span> </p>
+            
+            <div id="belt">
+                <div id="contacts">
+                    <div class="whatsapp">
+                        <a href="https://web.whatsapp.com/">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            (11) 91581-6184
+                        </a>
+                    </div>
+                    <div class="linkedin">
+                        <a href="https://www.linkedin.com/in/anderson-f-ribeiro-campos-01709727/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <div class="github">
+                        <a href="https://github.com/aribeiroc" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <p>Imagem de plano de fundo: <a href="https://unsplash.com/pt-br/@joshuaryanphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank"><span>Joshua Reddekopp</span></a> na <a href="https://unsplash.com/pt-br/fotografias/macbook-pro-na-mesa-de-madeira-marrom-SyYmXSDnJ54?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank"><span>Unsplash</span></a></p>
         </footer>
     </div>
 </body>

@@ -5,22 +5,39 @@
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
   color: azure;
+}
+
+p {
+  font-size: 1.6rem;
+}
+p span {
+  color: magenta;
 }
 
 ul {
   list-style: none;
 }
 
+h2 {
+  font-size: 3rem;
+  color: magenta;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-block: 2rem;
+}
+
 body {
-  background-image: url("../image/joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg");
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 0.8);
-  background-position: center;
-  background-blend-mode: darken;
   color: azure;
+  background-color: #000000;
 }
 body #content {
   max-width: 75rem;
@@ -33,16 +50,6 @@ body #content header {
   font-size: 1rem;
   height: 12vh;
 }
-body #content header #belt {
-  background: #020202;
-}
-body #content header #belt #contacts {
-  display: flex;
-  justify-content: end;
-  gap: 1rem;
-  padding: 1rem;
-  cursor: pointer;
-}
 body #content header nav {
   display: flex;
   justify-content: space-between;
@@ -52,100 +59,113 @@ body #content header nav {
 body #content header nav .title-menu {
   font-size: 1.5rem;
 }
+body #content header nav .title-menu a {
+  color: #00F5FF;
+}
 body #content header nav #menu {
   display: flex;
   gap: 1rem;
+  padding-block: 1rem;
 }
 body #content header nav #menu a {
-  color: azure;
+  color: #00F5FF;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: bold;
   padding: 0.5rem 1rem;
-  border-radius: 1rem;
+  border: 1px solid transparent;
   transition: 0.3s;
 }
 body #content header nav #menu a:hover {
   color: magenta;
   transform: translateY(-2px);
+  border-bottom: 1px solid;
 }
-body #home {
+body #content #home {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: relative;
+  background-image: url("../image/joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg");
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-position: center;
+  background-blend-mode: darken;
   min-height: 88vh;
 }
-body #home #description-profile {
+body #content #home #description-profile {
   display: flex;
+  flex-direction: column;
   min-height: 80vh;
   gap: 1rem;
 }
-body #home #description-profile #title {
+body #content #home #description-profile h2 {
+  margin-top: 1rem;
+}
+body #content #home #description-profile h3 {
+  margin-top: -12px;
+  text-shadow: 0px 0px 10px azure;
+}
+body #content #home #description-profile #title {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   font-size: 2rem;
-  margin-bottom: 3rem;
-  height: 50%;
+  height: 60vh;
 }
-body #home #description-profile #title .text-description h2 {
-  margin-block: 2rem;
-  color: magenta;
+body #content #home #description-profile #title .text-description {
+  display: flex;
+  flex-direction: column;
 }
-body #home #description-profile #title .text-description p {
-  font-size: 1.8rem;
+body #content #home #description-profile #title .text-description p {
+  font-size: 2rem;
   color: azure;
+  margin-block: 1rem;
+  text-shadow: 0px 0px 10px azure;
 }
-body #home #description-profile #title .text-description #description {
-  font-size: 1.2rem;
+body #content #home #description-profile #title .text-description .description {
+  font-size: 1.6rem;
   font-weight: 500;
   color: azure;
   margin-block: 1rem;
 }
-body #home #description-profile #title .stacks {
-  display: flex;
-  flex-direction: column;
-  font-size: 1.5rem;
-  justify-content: end;
-}
-body #home #description-profile #title .stacks .items-stacks {
-  display: flex;
-}
-body #home #description-profile #title .stacks .items-stacks li {
-  flex: 1;
+body #content #home #description-profile #title h4 {
+  padding-block: 2rem;
+  margin-top: 4rem;
+  font-size: 3rem;
   text-align: center;
+  color: #00F5FF;
+  text-shadow: 0px 0px 20px #00F5FF;
 }
-body #home #description-profile #title .stacks .items-stacks li i {
-  font-size: 3.5rem;
-}
-body #home #description-profile #img-home {
+body #content #home #description-profile #img-home {
   display: flex;
   justify-content: center;
+  align-items: center;
   overflow: hidden;
   width: 50%;
-  padding-block: 2rem;
 }
-body #home #description-profile #img-home img {
+body #content #home #description-profile #img-home img {
   border-radius: 1rem;
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: cover;
 }
-body #home #button-next {
+body #content #home #button-next {
   display: flex;
   justify-content: center;
   position: absolute;
-  bottom: 10%;
+  bottom: 5%;
   left: 50%;
   border-radius: 2rem;
   border: 1px solid azure;
-  color: #020202;
+  color: #000000;
   cursor: pointer;
   padding: 0.2rem;
   height: 3rem;
   width: 2rem;
 }
-body #home #button-next .fa-solid {
+body #content #home #button-next a {
+  color: #000000;
+}
+body #content #home #button-next a .fa-solid {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -169,6 +189,110 @@ body #home #button-next .fa-solid {
   100% {
     top: 14px;
   }
+}
+body #content #about {
+  display: flex;
+  flex-direction: column;
+  height: 88vh;
+}
+body #content #about #content-about {
+  display: flex;
+}
+body #content #about #content-about .text-description {
+  width: 100%;
+  padding: 1rem;
+}
+body #content #about #content-about .text-description p {
+  margin-block: 1rem;
+}
+body #content #about #content-about .text-description .stacks {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  justify-content: end;
+  margin-bottom: 4rem;
+}
+body #content #about #content-about .text-description .stacks .items-stacks {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+body #content #about #content-about .text-description .stacks .items-stacks .stacks-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  text-align: center;
+  padding: 1rem;
+}
+body #content #about #content-about .text-description .stacks .items-stacks .stacks-item p {
+  font-size: 1rem;
+}
+body #content #about #content-about .text-description .stacks .items-stacks .stacks-item i {
+  font-size: 3.5rem;
+  transition: ALL 0.4s ease-in-out;
+}
+body #content #about #content-about .text-description .stacks .items-stacks .stacks-item i:hover {
+  transform: translateY(-6px);
+}
+body #content #about #content-about .text-description .stacks .items-stacks #html i {
+  color: #e34c26;
+}
+body #content #about #content-about .text-description .stacks .items-stacks #css i {
+  color: #264de4;
+}
+body #content #about #content-about .text-description .stacks .items-stacks #sass i {
+  color: #cd6799;
+}
+body #content #about #content-about .text-description .stacks .items-stacks #javascript i {
+  color: #f0db4f;
+}
+body #content #about #content-about .text-description .stacks .items-stacks #react i {
+  color: #61dbfb;
+}
+body #content #about #content-about .text-description .stacks .items-stacks #git i {
+  color: #f05032;
+}
+body #content #about #content-about .text-description .stacks .items-stacks #nodejs i {
+  color: #76AC5F;
+}
+body #content #about #content-about .text-description .stacks .items-stacks #python i {
+  color: #3776ab;
+}
+body #content #about #content-about #img-about {
+  width: 50%;
+}
+body #content #about #content-about #img-about img {
+  max-width: 100%;
+  border-radius: 1rem;
+}
+body #content #portfolio {
+  display: flex;
+  flex-direction: column;
+}
+body #content #portfolio p {
+  font-size: 2rem;
+}
+body #content #portfolio h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+body #content #contact {
+  background-color: #000000;
+  padding-block: 1rem;
+}
+body #content #contact p {
+  text-align: center;
+}
+body #content #contact p span {
+  color: magenta;
+}
+body #content #contact #belt #contacts {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */

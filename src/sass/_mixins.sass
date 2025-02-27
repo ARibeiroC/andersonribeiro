@@ -1,7 +1,31 @@
-@use 'variables'
+@use '_variables' as *
 
 @mixin default
     margin: 0
     padding: 0
     box-sizing: border-box
     font-family: 'Roboto', sans-serif
+
+
+@mixin stack-color($id)
+    @if $id == 'html'
+        color: $color-html
+    @else if $id == 'css'
+        color: $color-css
+    @else if $id == 'sass'
+        color: $color-sass
+    @else if $id == 'javascript'
+        color: $color-javascript
+    @else if $id == 'react'
+        color: $color-react
+    @else if $id == 'git'
+        color: $color-git
+    @else if $id == 'python'
+        color: $color-python
+    @else if $id == 'nodejs'
+        color: $color-nodejs
+
+
+@mixin icon-stack
+    font-size: 3.5rem
+    transition: .4s
